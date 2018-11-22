@@ -10,7 +10,7 @@ class WebSocket
     private $onClosed;
     private $middleware;
 
-    public function create()
+    public function __construct()
     {
         $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
         socket_set_option($socket, SOL_SOCKET, SO_REUSEADDR, 1);

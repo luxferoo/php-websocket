@@ -9,7 +9,6 @@ $socket = new WebSocket();
 
 try {
     $socket
-        ->create()
         ->bind($address, $port)
         ->listen(20);
 } catch (HttpSocketException $exception) {
