@@ -92,7 +92,7 @@ class WebSocket
         }
     }
 
-    public function getClient()
+    public function getClients()
     {
         return $this->clients;
     }
